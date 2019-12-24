@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+    <style type="text/css">
+          @font-face {
+  font-family: Arial black;  
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bordered {  
+  border:2px solid #2E3092;
+}
+
+.bold{ 
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  width: 297mm;  
+  height: 200mm; 
+  margin: 0 auto; 
+  color: #555555;
+  background: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  font-size: 12px;  
+  color: #2E3092;
+}
+
+header {
+  padding:2px; 
+  padding-top: 0px;
+  margin-bottom: 3px;
+  border-bottom: 0px solid #AAAAAA;
+}
+
+#logo {
+  float: left;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.imglogo{
+  height: 80px;
+  width: auto;
+    
+}
+
+.schoolregno{
+  margin-top: 3px;    
+}
+
+#School {
+    margin-left: 15px;
+	margin-top: 3px;
+}
+
+#student {
+   margin-left: 17px;
+    margin-bottom: 10px;
+}
+
+.to {
+  color: #2E3092;
+  font-size: 1.2em;
+}
+
+.education{
+  margin-top: -7px;  
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bolder;
+  }
+
+.report{
+    margin-left: 241px;
+    color: red;
+    font-size: 1.9em;
+    font-weight: bold;   
+}
+
+.nameadd{
+ font-size: 1em;
+ font-weight: bold;
+}
+.regno{
+   margin-left: 613px;    
+}
+
+#student{
+    margin-bottom: 10px;
+}
+
+        
+ .yellow{
+   background-color: #FFFF33;
+   }
+
+.darkyellow{
+ background-color: 	#ffd2a6;
+ }
+        
+.darkblue{
+    background-color: #ccccff;    
+ }
+        
+.orange{
+background-color: #f9e0e6;            
+
+}
+table {
+  width: 98%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:auto;
+}
+
+table th,
+table td { 
+  text-align: center;    
+}
+.subject td{
+  border-right: 2px solid #2E3092;
+}
+.subject th{
+  border-right: 2px solid #2E3092;
+}
+.subject tbody tr{
+  border: 0px;
+}
+table th {
+  white-space: nowrap;       
+  font-weight: bold;   
+}
+
+table td {
+ color: #000000;
+}
+
+.thbor{ 
+border-bottom: 2px solid #2E3092;
+}
+.thbor1{ 
+border-right: 2px solid #2E3092;
+}
+ table .none{
+  border: none;
+}
+.sub{
+  text-align: left;
+  padding-left: 3px;
+}
+.border1{
+border: 2px solid #2E3092;
+}
+table .total {
+  background: #57B223;
+  color: #FFFFFF;
+}
+table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1.2em;
+}
+table tbody td{
+  padding: 3px;
+}
+ .container{ 
+ border: 5px double #2E3092;
+ }
+.col1{
+  width: 50%;
+  float: left;
+}
+.col2{
+  width: 50%;
+  float: right;
+}
+.margininterval{
+ margin-top: 15px;
+}
+.grade{
+  width: 100%;
+  padding: 6px 5px 5px 5px;  
+}
+.outstanding  td{
+   border:2px solid #2E3092;
+}
+.days{
+  margin-top: 5px;
+}
+.working{
+  float: left;
+  margin-left: 10px; 
+}
+.working td{
+  border:2px solid #2E3092;
+  }
+.blank{
+  float: right;
+  width: 53%;
+}
+.Personal{
+  width: 100%;
+  padding: 12px 0px 12px 1px;
+}
+.dawing{ 
+ width: 97%;
+ margin-top: -5px;
+}
+.dawing tr td{
+  padding: 2px;
+  width: 50px;
+  border:2px solid #2E3092;
+}
+.Point{
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+}
+.final{
+  width: 80%;
+  margin-top: -5px;
+}
+.final tr td{
+  padding:2px;
+  width: 50px;
+  border:2px solid #2E3092;
+}
+.write{
+  text-align: left;  
+  padding-left: 5px;
+}
+.seal{  
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold; 
+}
+footer {
+  color: #2E3092;
+  line-height: 0.1em;
+  margin-left: 15px;
+}
+
+.keys{
+  
+}
+
+.leftalign{
+  text-align: left;
+  text-indent: 8px;
+}
+
+.studentimg{  
+  float: right;
+  width: 2cm;
+  height: 2.5cm;
+  margin-right: 55px;
+  margin-top: -19px;
+  border:5px solid #2E3092;
+}
+
+#examination{
+      margin-left: 100px;
+}
+
+thead { display: table-row-group; }
+
+tr {page-break-inside: avoid; }
+
+
+@media all {
+ .container  { overflow: hidden;}
+
+thead { display: table-row-group; }
+
+tr {page-break-inside: avoid; }
+
+}
+
+@media print {
+ .container  { display: block; page-break-before: always; }
+}
+         
+    
+
+    </style> 
+  </head>
+  <body>
+    <div class="container">               
+    <header class="clearfix">
+      <div id="logo">
+        <img src="logo.png" class="imglogo">
+      </div>
+      <div id="School">
+         <p class="schoolregno">School Reg No.:19206/058/059</p>
+        <div class="education"><span class="name">Devkota Education Foundation</span><span class="report">ANNUAL PROGRESS REPORT</span><span style="">-2074 B.S.</span></div>
+        <div class=""><span class="nameadd">Kanakai-3, Surunga, Jhapa, Nepal</span> <span class="regno">Reg No.: 44111</span> </div>   
+        </div>      
+    </header>
+    <main>         
+        <div id="student">
+          <div class="to"><b>Student's Name:</b><span style="margin-left:10px; margin-right: 190px; font-weight: bold; color: #000;">Ram Sagar Jaiswal</span><b>Class/Section/Roll No.:</b><span style="font-weight: bold; margin-right: 233px; margin-left: 10px; color:#000;">7/19</span> <b>Symbol No.:</b><span style="font-weight: bold; margin-left: 10px; color:#000;">256</span></div>
+        </div>        
+      <div class="gradetable">
+      <table  class="subject bordered" cellspacing="0" cellpadding="0">
+        <thead class="bordered">
+       <tr style="background-color: #EAEFFA;">
+    <th rowspan="2">S.N.</th>
+    <th rowspan="2">Subjects</th>
+    <th rowspan="2">Full<br/>Marks</th>
+    <th rowspan="2">Pass<br/>Marks</th>
+    <th colspan="7" style="border-bottom: 2px solid #2E3092;">RAS</th>
+    <th rowspan="2" class="yellow">[X]<br/>50%<br/>RAS</th>
+    <th colspan="2" style="border-bottom: 2px solid #2E3092;">WAS</th>
+    <th rowspan="2" class="yellow">[Y]<br/>75%<br/>WAS</th>
+    <th rowspan="2" class="darkyellow">[X+Y]<br/>Grand<br/>Total<br/>[100%]</th>
+    <th rowspan="2">[A]<br/>40%<br/>Final<br/>Term</th>
+    <th rowspan="2">[B]<br/>20%<br/>1<sup>st</sup><br/>Term</th>
+    <th rowspan="2">[C]<br/>20%<br/>2<sup>nd</sup><br/>Term</th>
+    <th rowspan="2">[D]<br/>20%<br/>3<sup>rd</sup><br/>Term</th>
+    <th rowspan="2" class="darkblue"><p style="transform: rotate(-90deg); font-size: 10px; font-weight: bold; width:5px; margin-bottom: -50px; margin-left: 17px; margin-top: 20px;">Tot.Combined<br/>  A+B+C+D</p></th>
+           <th rowspan="2"><p style="transform: rotate(-90deg); font-size: 10px; font-weight: bold; width:5px; margin-bottom: -50px; margin-left: 17px; margin-top: 20px;">  Highest<br/>Marks (Comb.)</p></th>
+    <th colspan="2" style="border-bottom: 2px solid #2E3092;">Grading<br/>System</th>
+    </tr>
+    <tr style="background-color: #EAEFFA;">
+    <th>Attn.<br/>[10]</th>
+    <th>HW<br/>[10]</th>
+    <th>R&amp;C<br/>[10]</th>
+    <th>CW<br/>[5]</th>
+    <th>Prj.W<br/>[10]</th>
+    <th>CP<br/>[10]</th>
+    <th>HW+<br/>Main.<br/>[5]</th>
+    <th>UT<br/>[20]</th>
+    <th>TEE<br/>[80]</th>
+    <th>Grade</th>
+    <th>Grade<br/>Point</th>
+    </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td class="sub">Paragon</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td class="sub">Treasure English</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td class="sub">Nepali</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td class="sub">Compulsory Maths</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td class="sub">Science</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td class="sub">Social Studies</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td class="sub">Computer Science</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td class="sub">OBTE</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>            
+            <td class="darkyellow"83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td class="sub">Health</td>
+            <td>100</td>
+            <td>40</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>10</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4.5</td>
+            <td class="yellow">23.0</td>
+            <td>18.5</td>
+            <td>62.5</td>
+            <td class="yellow">60.8</td>           
+            <td class="darkyellow">83.8</td>            
+            <td>33.5</td>            
+            <td>16.4</td>            
+            <td>16.8</td>            
+            <td>16.1</td>            
+            <td class="darkblue">82.8</td>            
+            <td>97.8</td>            
+            <td class="orange">A</td>            
+            <td class="orange">3.60</td>            
+          </tr>
+          <tr>
+            <td></td>
+            <td class="sub"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="yellow"></td>
+            <td></td>
+            <td></td>
+           <td class="yellow">60.8</td>            
+            <td class="darkyellow"></td>            
+            <td></td>            
+            <td></td>            
+            <td></td>            
+            <td></td>            
+            <td class="darkblue"></td>            
+            <td></td>            
+            <td class="orange"></td>            
+            <td class="orange"></td>            
+          </tr>
+          
+          <tr class="bordered">
+            <td class="bordered bold" colspan="2">Total</td>            
+            <td class="bordered bold">100</td>
+            <td class="bordered bold">40</td>
+            <td class="bordered bold">8</td>
+            <td class="bordered bold">9.5</td>
+            <td class="bordered bold">10</td>
+            <td class="bordered bold">5</td>
+            <td class="bordered bold">4</td>
+            <td class="bordered bold">5</td>
+            <td class="bordered bold">4.5</td>
+            <td class="bordered bold yellow">23.0</td>
+            <td class="bordered bold">18.5</td>
+            <td class="bordered bold">62.5</td>
+            <td class="bordered bold yellow">60.8</td>            
+            <td class="bordered bold darkyellow">83.8</td>            
+            <td class="bordered bold">33.5</td>            
+            <td class="bordered bold">16.4</td>            
+            <td class="bordered bold">16.8</td>            
+            <td class="bordered bold">16.1</td>            
+            <td class="bordered bold darkblue">82.8</td>            
+            <td class="bordered bold">97.8</td>            
+            <td class="bordered bold orange">A</td>            
+            <td class="bordered bold orange">3.60</td>
+          </tr>                  
+        </tbody>        
+      </table>
+      </div>
+      <div id="interval clearfix" class="margininterval">
+        <div class="col1 clearfix">
+        <div class="grade">          
+           <table  class="outstanding bordered" cellspacing="0" cellpadding="0">
+              <thead>
+               <tr style="padding: 5px;">
+                 <th class="bordered" rowspan="2">EXAM</th>
+                 <th class="bordered" rowspan="2">%</th>
+                 <th class="bordered" rowspan="2">Grade</th>
+                 <th class="bordered" rowspan="2">Grade Point</th>
+                 <th class="bordered" rowspan="2">Result</th>
+                 <th class="bordered" colspan="2">Rank</th>
+               </tr>
+               <tr>
+                <th class="bordered">Section</th>
+                <th class="bordered">Class</th>   
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th class="bordered write">1<sup>st</sup>Term Exam</th>
+                 <td>73.88</td>
+                 <td>B+</td>
+                 <td>3.20</td>
+                 <td>Pass</td>
+                 <td>7</td>
+                 <td>-</td>
+               </tr>               
+               <tr>
+                 <th class="bordered write">2<sup>nd</sup>Term Exam</th>
+                 <td>73.88</td>
+                 <td>B+</td>
+                 <td>3.20</td>
+                 <td>Pass</td>
+                 <td>7</td>
+                 <td>-</td>
+               </tr>
+               <tr>
+                 <th class="bordered write">3<sup>rd</sup>Term Exam</th>
+                 <td>73.88</td>
+                 <td>B+</td>
+                 <td>3.20</td>
+                 <td>Pass</td>
+                 <td>7</td>
+                 <td>-</td>
+               </tr>
+               <tr>
+                 <th class="bordered write">Final Term Exam</th>
+                 <td>73.88</td>
+                 <td>B+</td>
+                 <td>3.20</td>
+                 <td>Pass</td>
+                 <td>7</td>
+                 <td>-</td>
+               </tr>
+               <tr>
+                 <th class="bordered write">Combined Final</th>
+                 <td>73.88</td>
+                 <td>B+</td>
+                 <td>3.20</td>
+                 <td>Pass</td>
+                 <td>7</td>
+                 <td>-</td>
+               </tr>
+             </tbody>             
+           </table>
+        </div>
+        <div class="days">
+          <table class="working bordered" cellspacing="0" cellpadding="0">
+            <caption style="text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 2px;">Attendance summary</caption>
+                        
+            <tr>
+                <th rowspan="2" class="bordered">Working Days</th>
+                <th class="bordered">1<sup>st</sup>Term</th>
+                <th class="bordered">2<sup>nd</sup>Term</th>
+                <th class="bordered">3<sup>rd</sup>Term</th>
+                <th class="bordered">Final Term</th>
+            </tr>
+            <tr>
+              
+              <td>54</td>
+              <td>60</td>
+              <td>53</td>
+              <td>50</td>
+            </tr>
+           <tr>
+              <th>Present Days</th>
+              <td>14</td>
+              <td>60</td>
+              <td>52</td>
+              <td>49</td>
+            </tr>
+          </table>          
+        </div>
+        </div>
+        <div class="col2">
+          <div class="Personal">            
+            <table class="dawing bordered" cellspacing="0" cellpadding="0">              
+            <tr>
+              <td class="write" Style="width:500px; height: 232px; vertical-align: text-top; text-align: center;">RESULT SUMMARY BY AN INFOGRAPHIC</td>             
+            </tr>           
+          </table>      
+          </div>
+          
+        </div>        
+      </div>
+      </main>   
+       <hr/>
+  <footer class="clearfix">
+          <div class="keys" style="position:absolute; bottom:2px; width:100%;">
+             <table>
+			 <tr>
+			 <td>School Seal</td>
+			 <td></td>
+			 <td><span>Date:</span></td>
+			 <td></td>
+			 <td>class Teacher</td>
+			 <td></td>
+			 <td>Principal</td>
+			 </tr>
+          </div>
+      </footer>
+</div>
+  </body>
+</html>
